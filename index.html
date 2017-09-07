@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script>
+        jQuery.ajax( {
+            url: 'http://freegeoip.net/json/',
+            type: 'POST',
+            dataType: 'jsonp',
+            success: function(location) {
+                // If the visitor is browsing from Nigeria.
+                if (location.country_code === 'NG') {
+                    window.location = "en/index.html";
+                }
+
+                // If the visitor is browsing from Tanzania.
+                else if (location.country_code === 'TZ') {
+                    window.location = "sw/index.html";
+                }
+
+                // If the visitor is browsing from Neither Tanzania or Nigeria.
+                else {
+                    window.location = "en/index.html";
+                }
+            }
+        } );
+    </script>
+  </head>
+
+</html>
