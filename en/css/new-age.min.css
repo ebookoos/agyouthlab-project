@@ -411,7 +411,7 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus, footer ul li
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:bottom;
    // background: -webkit-linear-gradient(#fdcc52, #fdc539);
     //background: linear-gradient(#fdcc52, #fdc539)
 }
@@ -482,11 +482,28 @@ img{
     height:auto;
     object-fit: cover;
 }
-.img{
 
+.p-img {
+    width: 30%;
+}
+.img{
+width: 50%;
+}
+.img2{
+    width: 70%;
+}
+.steps li {
+    text-align: left;
+    color:white !important;
+}
+.steps h5 {
+    text-transform: capitalize;
 }
 .rm-pd{
     padding:0
+}
+.s-pad {
+    padding: 50px 0;
 }
 .pad{
     padding-top:1vh;
@@ -658,11 +675,15 @@ ul.social {
 ul.links >li{
     display: block;
     margin:10px 0;
-    color:rgba(255,255,255,.4)
+    color:rgba(255,255,255,.4);
+    font-size: 12px;
+}
+h7{
+    font-size:14px;
 }
 ul.social >li {
     display: inline-block;
-    margin:10px 10px;
+    margin:10px 5px;
     color:rgba(255,255,255,.4);
     filter:brightness(60%);
 }
@@ -671,7 +692,7 @@ ul.social >li {
     height:40px;
     padding:15px;
     color:#4ABB3D;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .content {
     height:180px;
