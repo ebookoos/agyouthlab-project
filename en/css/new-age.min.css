@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    font-family: Muli, Helvetica, Arial, sans-serif
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -35,13 +35,14 @@ hr.light {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Catamaran, Helvetica, Arial, sans-serif;
-    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px
 }
 
 p {
-    font-size: 18px;
+   // font-size: 18px;
+    font-size:1rem;
     line-height: 1.5;
     margin-bottom: 20px
 }
@@ -60,15 +61,16 @@ section h2 {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
+    padding: 10px 0 10px 0;
     box-shadow:0 2px 5px rgba(0,0,0,.4);
 }
 
 #mainNav .navbar-brand {
     color: #fdcc52;
-    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     letter-spacing: 1px
 }
@@ -85,7 +87,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
     font-size: 11px;
-    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-family:'Source Sans Pro', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase
 }
@@ -485,6 +487,7 @@ img{
 
 .p-img {
     width: 30%;
+    margin-bottom: 15px;
 }
 .img{
 width: 50%;
@@ -496,29 +499,37 @@ width: 50%;
     text-align: left;
     color:white !important;
 }
-.steps h5 {
+.steps h4 {
     text-transform: capitalize;
+    margin:10px 0;
 }
 .rm-pd{
     padding:0
 }
+.pd {
+    padding:60px 0 100px 0;
+}
 .s-pad {
     padding: 50px 0;
+    position: relative;
+    top: -1px;
 }
 .pad{
-    padding-top:1vh;
-    padding-left:2vh;
+    padding-top:50px;
+    padding-left:1.4vh;
+    padding-bottom: 3vh;
 }
 .pad2{
-    padding-top:2vh;
-    padding-right:2vh;
+    padding-top:50px;
+    padding-right: 1.4vh;
+    padding-bottom: 3vh
 }
 .section-heading {
     text-transform: uppercase;
    }
 .hr {
    background:#8dc63f;
-    width: 50px;
+    width: 60px;
     height: 2px;
     margin-bottom: 15px;
 }
@@ -529,7 +540,7 @@ width: 50%;
 .bg-green {
     background: url('../img2/Group.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     color:white !important;
 }
@@ -551,6 +562,32 @@ width: 50%;
     align-items: center;
     border-radius: 2px;
     padding: 10px;
+}
+.language {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    right:0;
+    min-width:10vw;
+    height: 57px;
+    color: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    padding: 10px;
+}
+.left {
+    float:left
+}
+.lg {
+    width: 3%;
+}
+@media (min-width: 808px) {
+    .lg {
+        display: none;
+    }
 }
 .chat a {
     color: white;
@@ -603,12 +640,25 @@ margin-left: 1vw;
     margin-right:0
 }
 .tp {
-    margin-top: 4vw
+    margin-top: 5vw;
+    padding-right: 4vw;
+}
+.tp2 {
+    margin-top: 4vw;
+    padding-left: 4vw;
 }
 @media  (max-width:800px){
     .al,.text-right {
         text-align:left !important;
 
+    }
+   .pad2 {
+       padding-right:0;
+       padding-left: 1.4vh;
+   }
+    .tp2 {
+        padding-left:0;
+        padding-right: 4vw;
     }
     .al {
         margin-left:0
@@ -672,6 +722,19 @@ ul.links{
 ul.social {
     padding:0
 }
+ul.social1 {
+    padding:0;
+    min-width:100px
+
+}
+@media (max-width:1200px) {
+   .language {
+       display:none;
+   }
+}
+.language ul.social1 >li{
+    float:left
+}
 ul.links >li{
     display: block;
     margin:10px 0;
@@ -683,10 +746,17 @@ h7{
 }
 ul.social >li {
     display: inline-block;
-    margin:10px 5px;
+    margin:10px 0;
     color:rgba(255,255,255,.4);
-    filter:brightness(60%);
+    filter:brightness(90%);
 }
+ul.social1 >li {
+    display: inline-block;
+    margin:10px 0;
+    float:left
+}
+
+
 .title {
     width:50%;
     height:40px;
@@ -695,7 +765,7 @@ ul.social >li {
     text-transform: capitalize;
 }
 .content {
-    height:180px;
+    height:160px;
     padding:15px 25px 15px 15px;
     position: relative;
 }
@@ -710,6 +780,20 @@ ul.social >li {
     color: #3E9F33 !important;
 
 }
+@media  (max-width: 640px) {
+    .middle {
+       text-align: center !important;
+    }
+}
+ul.steps li {
+    text-align: center;
+    margin-top:2vw;
+}
+ul.steps {
+  padding:0;
+    margin:0
+}
+
 
 /* Slider */
 .swiper-container {

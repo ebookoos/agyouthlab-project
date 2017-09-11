@@ -369,7 +369,7 @@ template {
 }
 
 .h2, h2 {
-    font-size: 1.6rem
+    font-size: 1.4rem
 }
 
 .h3, h3 {
@@ -3174,7 +3174,7 @@ tbody.collapse.show {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    padding: 0rem 1rem
 }
 
 .navbar > .container, .navbar > .container-fluid {
@@ -3190,8 +3190,8 @@ tbody.collapse.show {
 
 .navbar-brand {
     display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
+   // padding-top: .3125rem;
+    // padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
