@@ -41,10 +41,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-   // font-size: 18px;
-    font-size:1rem;
+   font-size: 18px;
+    //font-size:1rem;
     line-height: 1.5;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    color:#333
 }
 
 section {
@@ -64,7 +65,7 @@ section h2 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
-    padding: 10px 0 10px 0;
+    //padding: 10px 0 10px 0;
     box-shadow:0 2px 5px rgba(0,0,0,.4);
 }
 
@@ -84,12 +85,17 @@ section h2 {
     padding: 8px 10px;
     color: #222
 }
-
+a.dropdown-toggle {
+    position: relative;
+    top: 5px;
+    left:5px;
+}
 #mainNav .navbar-nav > li > a {
-    font-size: 11px;
+    font-size: 14px;
     font-family:'Source Sans Pro', sans-serif;
     letter-spacing: 2px;
-    text-transform: uppercase
+    text-transform: uppercase;
+
 }
 
 #mainNav .navbar-nav > li > a.active {
@@ -166,6 +172,16 @@ header.masthead {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.overlay{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    filter: blur(3px);
 }
 
 header.masthead .header-content {
@@ -410,7 +426,7 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus, footer ul li
 
 .bg-primary {
     background:url('../img2/Symbol.png'), #fad213;
-    background-attachment: fixed;
+   background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position:bottom;
@@ -443,7 +459,8 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus, footer ul li
     border-radius: 300px;
     font-family: Lato, Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    background:white;
 }
 
 .btn-xl {
@@ -467,7 +484,7 @@ ul.navbar-nav.ml-auto {
 .top {
     border-left: 5px solid #fad213;
     padding:3px 0 3px 20px;
-    font-size: 50px;
+    font-size:3vw;
     min-width:165px;
 }
 
@@ -491,6 +508,9 @@ img{
 }
 .img{
 width: 50%;
+}
+.h {
+    min-height: 126px;
 }
 .img2{
     width: 70%;
@@ -543,6 +563,9 @@ width: 50%;
     background-position: left;
     background-repeat: no-repeat;
     color:white !important;
+}
+.bg-lightgreen {
+    background:#8dc63f
 }
 .t-white {
     color:white;
@@ -599,6 +622,10 @@ width: 50%;
 .logo {
     width:30vh;
 }
+.logo2 {
+    margin:20px 0
+}
+
 .bg-green li {
     display:block;
 }
@@ -640,12 +667,18 @@ margin-left: 1vw;
     margin-right:0
 }
 .tp {
-    margin-top: 5vw;
+    margin-top:4vw;
     padding-right: 4vw;
+    margin-bottom:4vw;
+}
+.pdd {
+    padding-right: 10vw;
+    padding-left: 10vw;
 }
 .tp2 {
     margin-top: 4vw;
     padding-left: 4vw;
+    margin-bottom:4vw;
 }
 @media  (max-width:800px){
     .al,.text-right {
@@ -664,7 +697,10 @@ margin-left: 1vw;
         margin-left:0
     }
 }
-
+.wd {
+    width:50%;
+    margin:20px 0;
+}
 .bg-red {
     background: #C42227;
   }
@@ -677,6 +713,9 @@ margin-left: 1vw;
 .spc {
     padding:20px;
     line-height:1.6
+}
+.sp {
+    padding:0 15px;
 }
 div.form {
     padding:0;
@@ -697,7 +736,7 @@ div.form {
     border:none;
     border-radius:5px;
     color:white;
-    padding:12px 40px;
+    padding:12px 60px;
     margin:30px 0 15px 0;
     cursor:pointer
 }
@@ -707,6 +746,25 @@ div.form {
     background:white;
     color:#FAD213;
 }
+
+
+.a-red {
+    background: #C42227;
+    border:none;
+    border-radius:5px;
+    color:white;
+    padding:12px 40px;
+    margin:30px 0 15px 0;
+    cursor:pointer
+}
+
+.a-red:hover {
+    transition: background .8s ease;
+    background:white;
+    border:1px solid #C42227;
+    color:#C42227;
+}
+
 .f-hr {
     width:60vw;
     background:rgba(255,255,255,.7)
@@ -755,7 +813,9 @@ ul.social1 >li {
     margin:10px 0;
     float:left
 }
-
+.m-top {
+    margin-top:20px;
+}
 
 .title {
     width:50%;
@@ -763,6 +823,9 @@ ul.social1 >li {
     padding:15px;
     color:#4ABB3D;
     text-transform: capitalize;
+}
+.spd {
+    padding:30px 0
 }
 .content {
     height:160px;
