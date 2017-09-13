@@ -168,7 +168,7 @@ header.masthead {
     color: #fff;
    // background: url(../img/bg-pattern.png), #7b4397;
     //background: url(../img/bg-pattern.png), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: url(../img2/perfect2.png);
+    background: url(../img2/banner2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -677,6 +677,9 @@ margin-left: 1vw;
     padding-right: 10vw;
     padding-left: 10vw;
 }
+.bg-grey {
+    background: #f5f5f5
+}
 .tp2 {
     margin-top: 4vw;
     padding-left: 4vw;
@@ -869,7 +872,7 @@ ul.steps {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #f5f5f5;
     width: 60%;
     /* Center slide text vertically */
     display: -webkit-box;
