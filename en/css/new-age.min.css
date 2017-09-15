@@ -561,7 +561,7 @@ width: 50%;
 .pad2{
     padding-top:50px;
     padding-right: 4vh;
-    padding-bottom: 3vh
+   // padding-bottom: 3vh
 }
 .section-heading {
     text-transform: uppercase;
@@ -891,7 +891,11 @@ margin-left:20px;
     margin-right:20px;
     cursor: pointer;
 }
-
+.flexx {
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
+}
 /* Slider */
 .swiper-container {
     width: 100%;
