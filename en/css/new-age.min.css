@@ -183,7 +183,22 @@ header.masthead {
     background: rgba(0,0,0,.4);
     filter: blur(3px);
 }
-
+.message input,textarea {
+width:100%;
+}
+.t-black {
+    color: rgba(255, 255, 255, .3);
+}
+.message input {
+    height: 45px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.message textarea {
+    height: 159px;
+    margin-top: 10px;
+    padding: 15px;
+}
 header.masthead .header-content {
    // max-width: 500px;
     margin-bottom: 100px;
@@ -469,7 +484,7 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus, footer ul li
 }
 
 ul.navbar-nav.ml-auto {
-    margin-top:20px
+    margin-top:5px
 }
 .navbar-brand {
     margin-left: 0
