@@ -9,23 +9,23 @@
 
     <script>
         jQuery.ajax( {
-            url: 'http://freegeoip.net/json/',
+            url: 'https://freegeoip.net/json/',
             type: 'POST',
             dataType: 'jsonp',
             success: function(location) {
                 // If the visitor is browsing from Nigeria.
                 if (location.country_code === 'NG') {
-                    window.location = "en/index.html";
+                    window.location = "en/";
                 }
 
                 // If the visitor is browsing from Tanzania.
                 else if (location.country_code === 'TZ') {
-                    window.location = "sw/index.html";
+                    window.location = "sw/";
                 }
 
                 // If the visitor is browsing from Neither Tanzania or Nigeria.
                 else {
-                    window.location = "en/index.html";
+                    window.location = "en/";
                 }
             }
         } );
